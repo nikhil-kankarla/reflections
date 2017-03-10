@@ -1,0 +1,37 @@
+1. To open a file from terminal:
+$ cd ~ # go to home directory. (Use ls at any point to find folders in the directory)
+$ cd Desktop
+$ cd Udacity
+$ cd version-control
+$ cd reflections
+$ open -a TextEdit lesson-1-reflections.txt
+
+Or all of this can be done in two lines:
+$ cd Desktop/Udacity/version-control/reflections
+$ subl
+
+
+2. To compare differences between two files:
+$ diff -u old_file_name.extension new_file_name.extension
+
+3. Version control can even be used for LaTex
+
+4. git log shows every change ever made to the document, along with the associated commit message. to stop viewing git log output, press q
+
+5. git diff works in a similar way to point 3, except with commit numbers rather than file names. To get colored diff output, run git config --global color.ui auto. to stop viewing git diff output, press q
+
+6. a repository is a collection of files that you want to track together. A git commit takes a snapshot of all files in a repository
+
+7. to clone a repository:
+$ git clone repository_url
+
+8. to revert to a previous commit in a repository:
+$ git checkout commit_number
+
+9. a git repository is a directory that contains a ‘.git’ directory within it. These .git directories cannot be seen by the user, however, this directory stores the meta data associated with every commit you make.
+
+10. to create a new repository:
+$ git init
+
+11. to check the status of the git repository:
+$ git status
