@@ -1,0 +1,4 @@
+12. to add a file to the staging area:
+$ git add file_name.extension
+
+13. 
