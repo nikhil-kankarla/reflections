@@ -1,0 +1,9 @@
+25. to view and create remotes for a local repository:
+$ git remote (to view current remotes)
+$ git remote add remote_name (to create a new remote)
+
+26. to see the URL where a remote would pull data from, and the URL where a remote would push data to:
+$ git remote -v
+
+27. to push a branch onto a GitHub repository through a remote:
+$ git push remote_name branch_name
