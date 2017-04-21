@@ -18,7 +18,11 @@ $ diff -u old_file_name.extension new_file_name.extension
 
 4. git log shows every change ever made to the document, along with the associated commit message. to stop viewing git log output, press q
 
-5. git diff works in a similar way to point 3, except with commit numbers rather than file names. To get colored diff output, run git config --global color.ui auto. to stop viewing git diff output, press q
+5. to check the series of commits within a branch:
+$ git log Ñ-graph Ñ-oneline branch_one_name branch_two_name 
+(Ñ-graph Ñ-oneline makes the commit history easy to read)
+
+5. git diff works in a similar way to point 2, except with commit numbers rather than file names. To get colored diff output, run git config --global color.ui auto. to stop viewing git diff output, press q
 
 6. a repository is a collection of files that you want to track together. A git commit takes a snapshot of all files in a repository
 

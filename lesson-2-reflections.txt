@@ -1,4 +1,27 @@
 12. to add a file to the staging area:
 $ git add file_name.extension
 
-13. test
+12. if the previous change has been committed and everything is up to date, the staging area will be a snapshot of the last commit in the repository. If you make any changes to a file in the working directory, the staging area won’t be updated until you git add the changes. Even after git adding the changes to the staging area, you still need to commit to the repository through git commit
+
+13. to compare any differences between files in the working directory and the staging area:
+$ git diff (without any arguments)
+
+14. to compare any differences between files in the staging area and the repository:
+$ git diff —-staged
+
+15. to compare any differences between two commits:
+$ git diff most_recent_commit_number previous_commit_number
+
+16. to discard any changes to either/both the working directory and/or the staging area:
+$ git reset —hard
+
+17. to check which branch you are on:
+$ git branch
+
+18. to create a new branch:
+$ git branch new_branch_name
+
+19. to select the branch you want to commit to:
+$ git checkout branch_name
+
+20. remote branch is a branch that was created by someone else, not you
